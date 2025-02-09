@@ -101,5 +101,5 @@ The ipk/apk file will be found under `bin/packages/your_architecture/nikki`.
 
 ## Special Thanks
 
-- [@ApoisL](https://github.com/vernlau)
+- [@ApoisL](https://github.com/apoiston)
 - [@xishang0128](https://github.com/xishang0128)
