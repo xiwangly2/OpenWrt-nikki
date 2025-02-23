@@ -1,5 +1,14 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Wiki
+    about: Check it before start a new issue
+    url: https://github.com/nikkinikki-org/OpenWrt-nikki/wiki
+  - name: FAQ
+    about: Check it before start a new issue
+    url: https://github.com/nikkinikki-org/OpenWrt-nikki/wiki/FAQ
+  - name: Changelog
+    about: Check it before start a new issue
+    url: https://github.com/nikkinikki-org/OpenWrt-nikki/wiki/Changelog
   - name: How To Ask Questions The Smart Way
     about: Read it before start a new issue
     url: http://www.catb.org/~esr/faqs/smart-questions.html
