@@ -65,10 +65,10 @@ export function get_groups() {
 
 export function get_cgroups() {
 	const ubus = connect();
-	const services = ubus.call('services', 'list');
+	const services = ubus.call('service', 'list');
 	const result = [];
 	for (let name in services) {
-		if (length(services[name]['instances'] > 0)) {
+		if (length(services[name]['instances']) > 0) {
 			push(result, name);
 		}
 	}
