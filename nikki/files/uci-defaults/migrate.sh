@@ -63,23 +63,31 @@ proxy_transparent_proxy=$(uci -q get nikki.proxy.transparent_proxy); [ -n "$prox
 	uci add_list nikki.proxy.lan_inbound_interface=lan
 
 	proxy_access_control_mode=$(uci -q get nikki.proxy.access_control_mode); [ "$proxy_access_control_mode" != "all" ] && {
-		uci add nikki lan_access_control
-		uci set nikki.@lan_access_control[-1].enabled=1
-		[ "$proxy_access_control_mode" == "allow" ] && uci set nikki.@lan_access_control[-1].proxy=1
-		[ "$proxy_access_control_mode" == "block" ] && uci set nikki.@lan_access_control[-1].proxy=0
 		proxy_acl_ip=$(uci -q get nikki.proxy.acl_ip); [ -n "$proxy_acl_ip" ] && {
 			for ip in $proxy_acl_ip; do
+				uci add nikki lan_access_control
+				uci set nikki.@lan_access_control[-1].enabled=1
 				uci add_list nikki.@lan_access_control[-1].ip="$ip"
+				[ "$proxy_access_control_mode" == "allow" ] && uci set nikki.@lan_access_control[-1].proxy=1
+				[ "$proxy_access_control_mode" == "block" ] && uci set nikki.@lan_access_control[-1].proxy=0
 			done
 		}
 		proxy_acl_ip6=$(uci -q get nikki.proxy.acl_ip6); [ -n "$proxy_acl_ip6" ] && {
 			for ip6 in $proxy_acl_ip6; do
+				uci add nikki lan_access_control
+				uci set nikki.@lan_access_control[-1].enabled=1
 				uci add_list nikki.@lan_access_control[-1].ip6="$ip6"
+				[ "$proxy_access_control_mode" == "allow" ] && uci set nikki.@lan_access_control[-1].proxy=1
+				[ "$proxy_access_control_mode" == "block" ] && uci set nikki.@lan_access_control[-1].proxy=0
 			done
 		}
 		proxy_acl_mac=$(uci -q get nikki.proxy.acl_mac); [ -n "$proxy_acl_mac" ] && {
 			for mac in $proxy_acl_mac; do
+				uci add nikki lan_access_control
+				uci set nikki.@lan_access_control[-1].enabled=1
 				uci add_list nikki.@lan_access_control[-1].mac="$mac"
+				[ "$proxy_access_control_mode" == "allow" ] && uci set nikki.@lan_access_control[-1].proxy=1
+				[ "$proxy_access_control_mode" == "block" ] && uci set nikki.@lan_access_control[-1].proxy=0
 			done
 		}
 		[ "$proxy_access_control_mode" == "block" ] && {
