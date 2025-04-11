@@ -28,37 +28,37 @@ return view.extend({
 
         s = m.section(form.NamedSection, 'proxy', 'proxy', _('Proxy Config'));
 
-        s.tab('transparent_proxy', _('Transparent Proxy'));
+        s.tab('proxy', _('Proxy Config'));
 
-        o = s.taboption('transparent_proxy', form.Flag, 'enable', _('Enable'));
+        o = s.taboption('proxy', form.Flag, 'enabled', _('Enable'));
         o.rmempty = false;
 
-        o = s.taboption('transparent_proxy', form.ListValue, 'tcp_mode', _('TCP Mode'));
+        o = s.taboption('proxy', form.ListValue, 'tcp_mode', _('TCP Mode'));
         o.optional = true;
         o.placeholder = _('Disable');
         o.value('redirect', _('Redirect Mode'));
         o.value('tproxy', _('TPROXY Mode'));
         o.value('tun', _('TUN Mode'));
 
-        o = s.taboption('transparent_proxy', form.ListValue, 'udp_mode', _('UDP Mode'));
+        o = s.taboption('proxy', form.ListValue, 'udp_mode', _('UDP Mode'));
         o.optional = true;
         o.placeholder = _('Disable');
         o.value('tproxy', _('TPROXY Mode'));
         o.value('tun', _('TUN Mode'));
 
-        o = s.taboption('transparent_proxy', form.Flag, 'ipv4_dns_hijack', _('IPv4 DNS Hijack'));
+        o = s.taboption('proxy', form.Flag, 'ipv4_dns_hijack', _('IPv4 DNS Hijack'));
         o.rmempty = false;
 
-        o = s.taboption('transparent_proxy', form.Flag, 'ipv6_dns_hijack', _('IPv6 DNS Hijack'));
+        o = s.taboption('proxy', form.Flag, 'ipv6_dns_hijack', _('IPv6 DNS Hijack'));
         o.rmempty = false;
 
-        o = s.taboption('transparent_proxy', form.Flag, 'ipv4_proxy', _('IPv4 Proxy'));
+        o = s.taboption('proxy', form.Flag, 'ipv4_proxy', _('IPv4 Proxy'));
         o.rmempty = false;
 
-        o = s.taboption('transparent_proxy', form.Flag, 'ipv6_proxy', _('IPv6 Proxy'));
+        o = s.taboption('proxy', form.Flag, 'ipv6_proxy', _('IPv6 Proxy'));
         o.rmempty = false;
 
-        o = s.taboption('transparent_proxy', form.Flag, 'fake_ip_ping_hijack', _('Fake-IP Ping Hijack'));
+        o = s.taboption('proxy', form.Flag, 'fake_ip_ping_hijack', _('Fake-IP Ping Hijack'));
         o.rmempty = false;
 
         s.tab('router', _('Router Proxy'));

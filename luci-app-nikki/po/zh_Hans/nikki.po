@@ -17,12 +17,12 @@ msgid "API Secret"
 msgstr "API 密钥"
 
 #: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:69
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:113
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:114
 msgid "Access Control"
 msgstr "访问控制"
 
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:161
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:166
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:162
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:167
 msgid "All Port"
 msgstr "全部端口"
 
@@ -63,15 +63,15 @@ msgstr "行为"
 msgid "Block Mode"
 msgstr "黑名单模式"
 
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:154
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:155
 msgid "Bypass"
 msgstr "绕过"
 
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:156
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:157
 msgid "Bypass China Mainland IP"
 msgstr "绕过中国大陆 IP"
 
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:169
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:170
 msgid "Bypass DSCP"
 msgstr "绕过 DSCP"
 
@@ -92,8 +92,8 @@ msgstr "选择配置文件"
 msgid "Clear Log"
 msgstr "清空日志"
 
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:162
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:167
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:163
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:168
 msgid "Commonly Used Port"
 msgstr "常用端口"
 
@@ -145,11 +145,11 @@ msgstr "目标 IP（Geo）"
 msgid "Destination Port"
 msgstr "目标端口"
 
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:159
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:160
 msgid "Destination TCP Port to Proxy"
 msgstr "要代理的 TCP 目标端口"
 
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:164
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:165
 msgid "Destination UDP Port to Proxy"
 msgstr "要代理的 UDP 目标端口"
 
@@ -302,7 +302,7 @@ msgstr "编辑器"
 #: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:66
 #: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:75
 #: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:102
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:119
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:120
 msgid "Enable"
 msgstr "启用"
 
@@ -638,11 +638,12 @@ msgid "Protocol"
 msgstr "协议"
 
 #: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:97
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:151
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:152
 msgid "Proxy"
 msgstr "代理"
 
 #: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:29
+#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:31
 #: applications/luci-app-nikki/root/usr/share/luci/menu.d/luci-app-nikki.json:37
 msgid "Proxy Config"
 msgstr "代理配置"
@@ -810,10 +811,6 @@ msgstr "检查配置文件"
 #: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/profile.js:42
 msgid "Total"
 msgstr "总量"
-
-#: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/proxy.js:31
-msgid "Transparent Proxy"
-msgstr "透明代理"
 
 #: applications/luci-app-nikki/htdocs/luci-static/resources/view/nikki/app.js:38
 msgid "Transparent Proxy with Mihomo on OpenWrt."
